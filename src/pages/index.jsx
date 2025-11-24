@@ -51,7 +51,7 @@ const Index = () => {
             <div className="relative w-72 h-72 md:w-80 md:h-80 xl:w-96 xl:h-96 animate-float">
               <div className="absolute inset-0 bg-linear-to-br from-secondary/30 to-[#91B4AE]/70 rounded-3xl -rotate-6"></div>
               <div className="absolute inset-0 bg-linear-to-br from-[#558B71]/50 to-[#111185]/50 rounded-3xl rotate-6"></div>
-              <img src="./avatar-3.jpg" alt="" className="rounded-2xl absolute inset-2 object-cover" />
+              <img src="./grant-pic.jpg" alt="" className="rounded-2xl absolute inset-2 object-cover" />
             </div>
           </FlipDown>
         </div>

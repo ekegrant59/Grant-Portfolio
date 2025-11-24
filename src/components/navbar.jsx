@@ -11,13 +11,13 @@ const NavBar = () => {
     <div className="w-full flex justify-center items-center fixed pt-5 z-50">
       {/* Navbar */}
       <div
-        className={`max-w-6xl w-[94%] backdrop-blur-sm bg-white/50 border border-white/40 shadow-md relative flex justify-center items-center z-50  transition-all duration-200 ${
-          isOpen ? "rounded-3xl" : "rounded-full"
+        className={`max-w-6xl w-[94%] backdrop-blur-sm bg-white/50 border border-white/40 shadow-md relative flex justify-center items-center z-50 ${
+          isOpen ? "rounded-3xl" : "rounded-4xl"
         }`}
       >
         <nav
           className={`z-50 w-full ${
-            isOpen ? "rounded-3xl" : "rounded-full"
+            isOpen ? "rounded-3xl" : "rounded-4xl"
           }`}
         >
           <div className="w-full mx-auto px-2 md:px-5">
@@ -137,11 +137,14 @@ const NavBar = () => {
 
           {/* Mobile Menu */}
           <div
-            className={`${
-              isOpen ? "block" : "hidden"
-            } text-gray-900 text-start px-5 pb-5 transition-all duration-300 rounded-b-3xl flex justify-center items-center`}
-            id="mobile-menu"
-          >
+  className={`
+    overflow-hidden 
+    transition-all duration-300
+    px-5 text-gray-900 rounded-b-3xl 
+    ${isOpen ? "max-h-96 opacity-100 translate-y-0 pb-5" : "max-h-0 opacity-0 -translate-y-3 pb-0"}
+  `}
+  id="mobile-menu"
+>
             <div className="w-full rounded-2xl space-y-4 py-3">
               <ScrollLink
                 to="about"
