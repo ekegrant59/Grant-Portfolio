@@ -8,10 +8,10 @@ const NavBar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="w-full flex justify-center items-center fixed pt-5 z-50">
+    <div className="w-full flex justify-center items-center fixed pt-2 lg:pt-5 z-50">
       {/* Navbar */}
       <div
-        className={`max-w-6xl w-[94%] backdrop-blur-sm bg-white/50 border border-white/40 shadow-md relative flex justify-center items-center z-50 ${
+        className={`max-w-6xl w-[97%] backdrop-blur-sm bg-white/50 border border-white/40 shadow-md relative flex justify-center items-center z-50 transition-all duration-200 ${
           isOpen ? "rounded-3xl" : "rounded-4xl"
         }`}
       >
