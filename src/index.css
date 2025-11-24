@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+
+@theme{
+    --color-black: #021008;
+    --color-secondary: #0F4D96;
+    --color-primary: #2B2F31;
+    --color-primary-50: #e9f5ee;
+    --color-primary-100: #99cfb0;
+    --color-primary-200: #176b3b;
+    --color-primary-300: #0e3f23;
+    --color-primary-800: #12532E;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url("/src/fonts/clash-display/ClashDisplay-Regular.woff2") format("woff2"),
+         url("/src/fonts/clash-display/ClashDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Clash Display";
+    src: url("/src/fonts/clash-display/ClashDisplay-Medium.woff2") format("woff2"),
+         url("/src/fonts/clash-display/ClashDisplay-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Clash Display";
+    src: url("/src/fonts/clash-display/ClashDisplay-Extralight.woff2") format("woff2"),
+         url("/src/fonts/clash-display/ClashDisplay-Extralight.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Clash Display";
+    src: url("/src/fonts/clash-display/ClashDisplay-Bold.woff2") format("woff2"),
+         url("/src/fonts/clash-display/ClashDisplay-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Clash Display";
+    src: url("/src/fonts/clash-display/ClashDisplay-Semibold.woff2") format("woff2"),
+         url("/src/fonts/clash-display/ClashDisplay-Semibold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Clash Display";
+    src: url("/src/fonts/clash-display/ClashDisplay-Light.woff2") format("woff2"),
+         url("/src/fonts/clash-display/ClashDisplay-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  
+  /* Apply Clash Display to all elements */
+  * {
+    font-family: "Clash Display", sans-serif;
+  }
+
+  @layer utilities {
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+  
