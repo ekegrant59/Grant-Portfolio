@@ -227,7 +227,7 @@ const ProjectsGrid = () => {
 
               {/* Content */}
               <div className="p-8">
-                <div className="flex flex-wrap items-center space-x-2 space-y-2 mb-4">
+                <div className="flex flex-wrap items-center gap-2 mb-4">
                   {p.categories.map((c, i) => (
                     <span key={i} className={`px-3 py-1 text-sm rounded-full ${c.color}`}>
                       {c.label}
